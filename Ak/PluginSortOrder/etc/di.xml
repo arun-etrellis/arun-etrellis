@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+	<type name="Magento\Catalog\Model\Product">
+		<plugin name="EtrellisProduct" type="Ak\PluginSortOrder\Plugin\Model\NameBeforOne" sortOrder="1" disabled="false" />
+	</type>
+	<type name="Magento\Catalog\Model\Product">
+		<plugin name="EtrellisProducts" type="Ak\PluginSortOrder\Plugin\Model\NameAfterTwo" sortOrder="1" disabled="false" />
+	</type>
+</config>
