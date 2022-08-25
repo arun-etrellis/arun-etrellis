@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Testrepository\Helloworld\Api\HelloworldRepositoryInterface" type="Testrepository\Helloworld\Model\ResourceModel\HelloworldRepository" />
+    <preference for="Testrepository\Helloworld\Api\Data\HelloworldSearchResultInterface" type="Magento\Framework\Api\SearchResults" />
+    <preference for="Testrepository\Helloworld\Api\Data\HelloworldInterface" type="Testrepository\Helloworld\Model\Data\Helloworld" />
+</config>

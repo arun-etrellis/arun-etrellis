@@ -1,0 +1,22 @@
+{
+    "name": "testrepository/module-customtable",
+    "description": "Admin Curd Module for custom table with list, edit, and delete records and the REST API for the same",
+    "type": "magento2-module",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "arun",
+            "email": "arun@digiteon.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Testrepository\\CustomTable\\": ""
+        }
+    }
+}

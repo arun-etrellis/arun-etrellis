@@ -1,0 +1,38 @@
+<?php
+$data = $block->getGreetings();
+?>
+<!--<div class="my-greetings-header">
+    <div class="my-gretings-title">
+        <h2><?php echo __("My Greetings"); ?></h2>
+    </div>
+    <div class="my-greetings-list">
+        <ul>
+            <?php foreach($data as $greeting): ?>
+                <li><?php echo $greeting->getGreetingText(); ?></li>
+            <?php endforeach; ?>
+        </ul>
+    </div>
+</div>-->
+<div class="my-greetings-header">
+    <div class="my-greetings-list">
+        <ul>
+            <?php foreach($data as $greeting): ?>
+                    <li>
+                        <form action="/hellocrud/crud/update" method="post">
+                            <input type="hidden" name="greetings_id" value="<?php echo $greeting->getGreetingsId(); ?>">
+                            <input type="text" name="greeting_text" value="<?php echo $greeting->getGreetingText(); ?>">
+                            <input type="submit" value="update">
+                        </form>
+                        <a href="/hellocrud/crud/delete?greetings_id=<?php echo $greeting->getGreetingsId(); ?>">[ delete ]</a> 
+                    </li>
+            <?php endforeach; ?>
+        </ul>
+        <ul>
+            <form action="/hellocrud/crud/create" method="post">
+                <li><input type="text" name="greeting_text"><input type="submit" value="create"></li>
+            </form>
+        </ul>
+    </div>
+</div>
+
+

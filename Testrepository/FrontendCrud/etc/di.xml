@@ -1,0 +1,10 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+
+    <preference for="Testrepository\FrontendCrud\Api\ItemRepositoryInterface"
+                type="Testrepository\FrontendCrud\Model\ItemRepository"/>
+    <preference for="Testrepository\FrontendCrud\Api\Data\ItemInterface" type="Testrepository\FrontendCrud\Model\Item"/>
+    <preference for="Testrepository\FrontendCrud\Api\Data\ItemSearchResultInterface"
+                type="Testrepository\FrontendCrud\Model\ItemSearchResult"/>
+
+</config>

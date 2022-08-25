@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+	<menu>
+		<add id="Testrepository::top_level" title="Testrepository" module="Testrepository_CustomTable" sortOrder="10" resource="Magento_Backend::content"/>
+		<add id="Testrepository_CustomTable::Testrepository_customtable_table" title="Table" module="Testrepository_CustomTable" sortOrder="10" resource="Magento_Backend::content" parent="Testrepository::top_level" action="testrepository_customtable/table/index"/>
+	</menu>
+</config>
