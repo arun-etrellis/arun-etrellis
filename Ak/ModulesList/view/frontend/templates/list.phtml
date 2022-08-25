@@ -1,0 +1,20 @@
+<?php
+/** @var \Magento\Framework\View\Element\Template $block */
+
+/** @var \Pronko\ViewModel\ViewModel\CmsPagesList $viewModel */
+$viewModel = $block->getData('viewModel');
+
+?>
+<table border="2px solid black" style="width:45%">
+<?php $viewM = $viewModel->getCustomModules();
+    foreach ($viewM as $value) { ?>
+        <tr style="border: 1px solid black;">
+            <td style="width:5%; border: 1px solid black;">#</td>
+            <td style="width:40%; border: 1px solid black;"><?php echo $value; ?></td>
+        </tr>
+    
+   <?php  }
+?>
+
+</table>
+
