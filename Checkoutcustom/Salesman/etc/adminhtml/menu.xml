@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../Magento/Backend/etc/menu.xsd">
+   <menu>
+    	<add id="Checkoutcustom_Salesman::view" title="Salesman" module="Checkoutcustom_Salesman" sortOrder="50" resource="Checkoutcustom_Salesman::view"/>
+
+        <add id="Checkoutcustom_Salesman::menu" title="Manage Sales man" module="Checkoutcustom_Salesman" sortOrder="20" parent="Checkoutcustom_Salesman::view" action="salesman/index/index" resource="Checkoutcustom_Salesman::menu"/>
+
+</menu>
+</config>
