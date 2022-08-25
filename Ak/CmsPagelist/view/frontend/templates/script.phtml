@@ -1,9 +1,16 @@
 <?php
 /** @var \Magento\Framework\View\Element\Template $block */
 
-/** @var \Pronko\ViewModel\ViewModel\CmsPagesList $viewModel */
+/** @var ViewModel\CmsPagesList $viewModel */
 $viewModel = $block->getData('viewModel');
 ?>
+<h2>Cms Pages List</h2>
+<table border="2px solid black" style="width:45%">
 <?php foreach ($viewModel->getItems() as $page): ?>
-    <p><?= $page->getIdentifier() . ' - ' . $page->getTitle();?></p>
+     <tr style="border: 1px solid black;">
+        <td style="width:5%; border: 1px solid black;">*</td>
+        <td style="width:40%; border: 1px solid black;"><?= $page->getIdentifier(); ?></td>
+        <td style="width:40%; border: 1px solid black;"> <?= $page->getTitle();?> </td>
+     </tr>
 <?php endforeach; ?>
+</table>

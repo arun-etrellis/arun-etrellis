@@ -1,10 +1,11 @@
 <?php
 /** @var \Magento\Framework\View\Element\Template $block */
 
-/** @var \Pronko\ViewModel\ViewModel\CmsPagesList $viewModel */
+/** @var ViewModel\CmsPagesList $viewModel */
 $viewModel = $block->getData('viewModel');
 
 ?>
+<h2>Module List</h2>
 <table border="2px solid black" style="width:45%">
 <?php $viewM = $viewModel->getCustomModules();
     foreach ($viewM as $value) { ?>
